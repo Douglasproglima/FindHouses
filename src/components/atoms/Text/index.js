@@ -1,6 +1,7 @@
-import React from 'react';
-import { Text } from './styles';
+import styled from 'styled-components';
 
-export const Text = () => {
-  return <Text />;
-};
+export const Title = styled.Text`
+  font-size: ${({ theme }) => theme.metrics.px(28)}px;
+  color: white;
+  font-weight: bold;
+`;
