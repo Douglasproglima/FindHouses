@@ -17,7 +17,7 @@ stories.add('Title', () => {
   const value = text('Title', 'Exemplo de Title');
 
   return (
-    <Wrapper></Wrapper>
+    <Wrapper>
       <Title>{value}</Title>
     </Wrapper>
   );
