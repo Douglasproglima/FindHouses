@@ -11,7 +11,7 @@ import {
   DetailSubTitle,
   DetailText,
   DetailSectionTitle,
-  InputTitle,
+  InputLabel,
 } from './index';
 
 const Wrapper = styled.View`
@@ -34,10 +34,10 @@ stories.add('Title', () => {
 //#endregion
 
 //#region Stories Inputs Texts
-stories.add('InputTitle', () => {
-  const value = text('InputTitle', 'Localização');
+stories.add('InputLabel', () => {
+  const value = text('InputLabel', 'Localização');
 
-  return <InputTitle>{value}</InputTitle>;
+  return <InputLabel>{value}</InputLabel>;
 });
 //#endregion
 

@@ -9,7 +9,7 @@ export const Title = styled.Text`
 //#endregion
 
 //#region Inputs Texts
-export const InputTitle = styled.Text`
+export const InputLabel = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(14)}px;
   color: ${({ theme }) => theme.colors.White};
   font-weight: 600;
@@ -56,6 +56,14 @@ export const DetailText = styled.Text`
 
 export const DetailSectionTitle = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(20)}px;
+  color: ${({ theme }) => theme.colors.White};
+  font-weight: 600;
+`;
+//#endregion
+
+//#region Button Texts
+export const ButtonText = styled.Text`
+  font-size: ${({ theme }) => theme.metrics.px(22)}px;
   color: ${({ theme }) => theme.colors.White};
   font-weight: 600;
 `;
