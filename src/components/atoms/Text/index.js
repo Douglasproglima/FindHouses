@@ -10,9 +10,10 @@ export const Title = styled.Text`
 
 //#region Inputs Texts
 export const InputLabel = styled.Text`
-  font-size: ${({ theme }) => theme.metrics.px(14)}px;
+  font-size: ${({ theme }) => theme.metrics.px(16)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: 600;
+  font-weight: bold;
+  padding-left: ${({ theme }) => theme.metrics.px(2)}px;
 `;
 //#endregion
 
