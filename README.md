@@ -77,6 +77,16 @@ $ cd FindHouses
 # Instale as dependências
 $ yarn install
 
+# Relacionar as fontes ao react-native
+$ npx react-native link
+
+# Em novos projetos, nasta add dentro da pasta src/assets/fonts as fontes de sua escolha. Após esse procedimento, na raiz do projeto, deve se criar um arquivo react-native.config.js e conteúdo algo similar:
+module.exports = {
+  assets: ['./src/assets/fonts/'],
+};
+
+# repetir o  comando link para relacionar as fonts ao react-native.
+
 # Execute a aplicação
 $ yarn android ou yarn ios
 ```
