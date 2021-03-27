@@ -20,7 +20,7 @@ const hp = heightPixel => {
 
 const FIGMA_WIDTH = 375;
 const px = valuePixel => {
-  const widthPercent = valuePixel / FIGMA_WIDTH / 100;
+  const widthPercent = (valuePixel / FIGMA_WIDTH) * 100;
   const screenPixel = PixelRatio.roundToNearestPixel(
     (width * parseFloat(widthPercent)) / 100,
   );
