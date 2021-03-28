@@ -2,9 +2,9 @@ import styled from 'styled-components/native';
 
 //#region Titles
 export const Title = styled.Text`
-  font-size: ${({ theme }) => theme.metrics.px(28)}px;
+  font-size: ${({ theme }) => theme.metrics.px(26)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: bold;
+  font-family: 'Montserrat-Bold';
 `;
 //#endregion
 
@@ -12,8 +12,8 @@ export const Title = styled.Text`
 export const InputLabel = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(16)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: bold;
   padding-left: ${({ theme }) => theme.metrics.px(2)}px;
+  font-family: 'Montserrat-SemiBold';
 `;
 //#endregion
 
@@ -21,18 +21,19 @@ export const InputLabel = styled.Text`
 export const CardTitle = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(14)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: bold;
+  font-family: 'Montserrat-Bold';
 `;
 
 export const CardDescription = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(10)}px;
   color: ${({ theme }) => theme.colors.White};
+  font-family: 'Montserrat-Regular';
 `;
 
 export const CardHightLightText = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(16)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: 600;
+  font-family: 'Montserrat-Bold';
 `;
 //#endregion
 
@@ -40,25 +41,25 @@ export const CardHightLightText = styled.Text`
 export const DetailTitle = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(24)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: bold;
+  font-family: 'Montserrat-Bold';
 `;
 
 export const DetailSubTitle = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(18)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: 600;
+  font-family: 'Montserrat-SemiBold';
 `;
 
 export const DetailText = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(14)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: 600;
+  font-family: 'Montserrat-Regular';
 `;
 
 export const DetailSectionTitle = styled.Text`
   font-size: ${({ theme }) => theme.metrics.px(20)}px;
   color: ${({ theme }) => theme.colors.White};
-  font-weight: 600;
+  font-family: 'Montserrat-Bold';
 `;
 //#endregion
 
