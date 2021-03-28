@@ -106,6 +106,13 @@ $
 
 # Limpar cache do Metro bundle (Pausar o nodeserver)
 $ yarn start --reset-cache
+
+# Resolvendo problema do Debbug data do emulador
+$ adb shell "date `date +%m%d%H%M%Y.%S`"
+
+TO
+
+$ adb shell date -s $(date +%Y%m%d.%H%M%S)
 ```
 
 ---
