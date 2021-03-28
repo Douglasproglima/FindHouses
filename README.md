@@ -77,6 +77,17 @@ $ cd FindHouses
 # Instale as dependências
 $ yarn install
 
+# Execute a aplicação
+$ yarn android ou yarn ios
+```
+
+---
+
+## :notebook: Alguns comando executados durantes desenvolvimento do APP
+
+---
+
+```bash
 # Relacionar as fontes ao react-native
 $ npx react-native link
 
@@ -87,8 +98,14 @@ module.exports = {
 
 # repetir o  comando link para relacionar as fonts ao react-native.
 
-# Execute a aplicação
-$ yarn android ou yarn ios
+# Para usar api externa, é necessário add dois pacotes, axios e react-native-dotenv
+$ yarn add axios react-native-dotenv
+
+# Configurar plugin do react-native dotenv no arquivo babel
+$
+
+# Limpar cache do Metro bundle (Pausar o nodeserver)
+$ yarn start --reset-cache
 ```
 
 ---

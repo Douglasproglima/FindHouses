@@ -17,7 +17,7 @@ export const HouseCard = ({ imgSource }) => {
         <TextContainerLeft>
           <CardTitle>Casa de luxo à venda</CardTitle>
           <CardDescription>
-            Rua Dona Florinda, 71 - Vila do Chaves
+            R: Dona Florinda e Senhor Madruga, 71 - Vila do Chaves - MG
           </CardDescription>
         </TextContainerLeft>
 

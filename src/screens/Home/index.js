@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ScreenContainer, TopContainer, TitleContainer } from './styles';
 import { Title, IconButton, Input, HouseCard } from '../../components';
+import { getHousesCall } from '../../services/calls';
+
 export const HomeScreen = () => {
+  const callGetHouses = async () => {
+    const result = await getHousesCall();
+
+    console.log({ result });
+  };
+
+  useEffect(() => {
+    callGetHouses();
+  }, []);
+
   return (
     <ScreenContainer>
       <TopContainer>
