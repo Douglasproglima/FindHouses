@@ -1,0 +1,385 @@
+{
+  "properties": [
+    {
+      "property_id": "R5299836397",
+      "listing_id": "609995230",
+      "prop_type": "apartment",
+      "list_date": "2015-12-18T13:58:00.000Z",
+      "last_update": "2021-03-28T08:40:00.000Z",
+      "year_built": 2005,
+      "listing_status": "active",
+      "beds": 0,
+      "prop_status": "for_rent",
+      "address": {
+        "city": "Columbia",
+        "country": "USA",
+        "county": "Richland",
+        "county_needed_for_uniq": false,
+        "lat": 34.15496,
+        "line": "100 Rice Terrace Cir",
+        "postal_code": "29229",
+        "state_code": "SC",
+        "state": "South Carolina",
+        "time_zone": "America/New_York",
+        "neighborhood_name": "Northeast Columbia",
+        "neighborhoods": [
+          {
+            "id": "24d0632d-48a7-59d6-bc56-afe09592a6f8",
+            "level": "macro_neighborhood",
+            "name": "Northeast Columbia"
+          }
+        ],
+        "lon": -80.914516
+      },
+      "client_display_flags": {
+        "presentation_status": "for_rent",
+        "is_showcase": true,
+        "lead_form_phone_required": true,
+        "price_change": 0,
+        "has_specials": false,
+        "is_mls_rental": false,
+        "is_rental_community": true,
+        "is_rental_unit": false,
+        "is_co_star": true,
+        "is_apartmentlist": false,
+        "suppress_map_pin": false,
+        "suppress_phone_call_lead_event": true,
+        "price_reduced": false,
+        "allows_cats": true,
+        "allows_dogs": true,
+        "allows_dogs_small": true,
+        "allows_dogs_large": true,
+        "has_matterport": true
+      },
+      "products": [
+        "enhanced",
+        "management_other_listings",
+        "management_company_logo",
+        "management_company_name",
+        "management_company_website",
+        "_COMMUNITY_RENTAL",
+        "_COMMUNITY_RENTAL",
+        "_COMMUNITY_RENTAL",
+        "_COMMUNITY_RENTAL",
+        "_COMMUNITY_RENTAL"
+      ],
+      "agents": [
+        {
+          "primary": true
+        }
+      ],
+      "lead_forms": {
+        "form": {
+          "name": {
+            "required": true,
+            "minimum_character_count": 1
+          },
+          "email": {
+            "required": true,
+            "minimum_character_count": 5
+          },
+          "move_in_date": {
+            "required": true,
+            "default_date": "2021-04-01T12:00:00Z",
+            "minimum_days_from_today": 1,
+            "maximum_days_from_today": 180
+          },
+          "phone": {
+            "required": true,
+            "minimum_character_count": 10,
+            "maximum_character_count": 11
+          },
+          "message": {
+            "required": false,
+            "minimum_character_count": 0
+          },
+          "show": false
+        },
+        "show_agent": false,
+        "show_broker": false,
+        "show_provider": false,
+        "show_management": false
+      },
+      "lot_size": {
+        "size": 0,
+        "units": "sqft"
+      },
+      "building_size": {
+        "units": "sqft"
+      },
+      "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/100-Rice-Terrace-Dr_Columbia_SC_29229_M52998-36397",
+      "rdc_app_url": "move-rdc://www.realtor.com/realestateandhomes-detail/100-Rice-Terrace-Dr_Columbia_SC_29229_M52998-36397",
+      "community": {
+        "baths_max": 2.5,
+        "baths_min": 1,
+        "beds_max": 3,
+        "beds_min": 1,
+        "contact_number": "(844) 779-6221",
+        "id": 1313593,
+        "name": "Rice Terrace Apartments and Townhomes",
+        "price_max": 1390,
+        "price_min": 920,
+        "source_id": "e8zqczm",
+        "sqft_max": 1668,
+        "sqft_min": 799
+      },
+      "data_source_name": "co-star",
+      "source": "community",
+      "page_no": 1,
+      "rank": 1,
+      "list_tracking": "type|property|data|prop_id|5299836397|list_id|609995230|comm_id|1313593|page|rank|data_source|co-star|property_status|product_code|advantage_code^1|1|3K2|D1C|0^^$0|1|2|$3|4|5|6|7|8|9|G|A|H|B|C|D|I|E|J|F|K]]",
+      "photo_count": 83,
+      "photos": [
+        {
+          "href": "https://ar.rdcpix.com/487241492/1ec053fab3bae02925a898872f62dbe6c-f0o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2103562954o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3733001531o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4269454573o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2872448534o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1220952109o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f33221849o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f599748629o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1038485390o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f956680022o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1208733353o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1609498986o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2765405226o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4255145031o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f731945737o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1859258111o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f213526146o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f183965958o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3931958194o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2509054990o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3454488874o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3007831404o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2401808600o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1354361038o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1675991334o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f669290623o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f491745567o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f53231914o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3526516613o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2367484496o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2837083459o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4074793640o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3131087331o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4056473934o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1984795479o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3372457206o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f155143018o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3677478491o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4043594254o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2481655952o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1948575098o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f342911632o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2011578115o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f789708211o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2216010893o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1166698699o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f473899712o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1546704346o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f47069941o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1405705289o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1227155421o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3530617071o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4054636023o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2514495920o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1226913808o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3591763976o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2319423170o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1931650264o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3864553772o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1781572995o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f881606218o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3037512368o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2839925910o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f4108879947o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1158108043o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3308098542o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1192534849o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1972243001o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2128723386o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f14396135o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f558187417o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f447588794o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3780255124o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1489899365o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f716134397o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1699365340o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f431992073o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f3024192747o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f68004509o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1075032228o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f1079800971o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f2019152174o.jpg"
+        },
+        {
+          "href": "https://ar.rdcpix.com/1ec053fab3bae02925a898872f62dbe6c-f207334904o.jpg"
+        }
+      ]
+    }
+  ]
+}
