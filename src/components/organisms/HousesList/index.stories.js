@@ -20,44 +20,22 @@ stories.addDecorator(getStory => <Wrapper>{getStory()}</Wrapper>);
 stories.add('Standart', () => {
   const mockArray = [
     {
-      property_id: '123456',
       address: {
-        line: 'Casa extra grande',
-        state: 'SC',
-        neighborhood_name: 'Hamburgo',
-      },
-      community: {
-        price_max: 1200,
-      },
-      photos: [
-        {
-          href: IMAGE_URL,
+        property_id: '12345',
+        line: 'Minha Casa',
+        neighborhood_name: 'Savassi',
+        state: 'BH',
+        photos: [
+          {
+            href: IMAGE_URL,
+          },
+        ],
+        community: {
+          price_max: 500,
         },
-      ],
-    },
-    {
-      property_id: '456789',
-      address: {
-        line: 'Casa de Luxo',
-        state: 'SP',
-        neighborhood_name: 'Alphaville',
       },
-      community: {
-        price_max: 2900,
-      },
-      photos: [
-        {
-          href: IMAGE_URL,
-        },
-      ],
     },
   ];
 
-  return (
-    <HousesList
-      data={mockArray}
-      //renderItem={() => <HouseCard />}
-      //KeyExtractor={mockArray => mockArray.property_id}
-    />
-  );
+  return <HousesList data={mockArray} />;
 });
