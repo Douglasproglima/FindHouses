@@ -6,10 +6,18 @@ export const ScreenContainer = styled.View`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 100%;
   width: 100%;
-  padding: ${({ theme }) => theme.metrics.px(24)}px;
+  height: 100%;
   background-color: ${({ theme }) => theme.colors.BackgroundDark};
+`;
+
+export const ContentContainer = styled.View`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: ${({ theme }) => theme.metrics.wp(100)}px;
+  padding: ${({ theme }) => theme.metrics.px(24)}px;
 `;
 
 export const TopContainer = styled.View`
@@ -18,7 +26,7 @@ export const TopContainer = styled.View`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: ${({ theme }) => theme.metrics.px(36)}px;
+  margin-bottom: ${({ theme }) => theme.metrics.px(24)}px;
 `;
 
 export const TitleContainer = styled.View`

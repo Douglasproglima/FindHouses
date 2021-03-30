@@ -1,3 +1,7 @@
 import styled from 'styled-components/native';
 
-export const HousesListContainer = styled.View``;
+export const HouseListContainer = styled.FlatList.attrs({
+  contentContainerStyle: {
+    alignItems: 'center',
+  },
+})``;

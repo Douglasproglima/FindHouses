@@ -1,15 +1,15 @@
 import React from 'react';
 import { HouseCard } from '../../molecules/HouseCard';
-import { HousesListContainer } from './styles';
+import { HouseListContainer } from './styles';
 
-export const HousesList = data => {
+export const HousesList = ({ data, children }) => {
   console.log('HousesLists - Debug');
   console.log(data);
 
   return (
-    <HousesListContainer
+    <HouseListContainer
       data={data}
-      renderItem={() => (
+      renderItem={({ item }) => (
         <HouseCard
           title={item.address.line}
           description={`${item.address.neighborhood_name} - ${item.address.state}`}
@@ -18,6 +18,10 @@ export const HousesList = data => {
         />
       )}
       keyExtractor={item => item.property_id}
+      ListHeaderComponent={children}
+      /*contentContainerStyle={{
+        alignItems: 'center',
+      }}*/
     />
   );
 };

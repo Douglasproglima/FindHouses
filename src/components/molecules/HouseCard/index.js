@@ -9,12 +9,18 @@ import {
   TextContainerRight,
 } from './styles';
 
-export const HouseCard = ({
-  imgSource,
-  title = 'Casa de luxo à venda',
-  description = 'R: Dona Florinda e Senhor Madruga, 71 - Vila do Chaves - MG',
-  price = 1568,
-}) => {
+export const HouseCard = ({ imgSource, title, description, price }) => {
+  const formattedPrice = value => {
+    if (value != null) {
+      const formatted =
+        '$ ' + value.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+
+      return formatted;
+    } else {
+      return 0;
+    }
+  };
+
   return (
     <CardContainer>
       <CardImg source={{ uri: imgSource }} />
@@ -26,7 +32,9 @@ export const HouseCard = ({
         </TextContainerLeft>
 
         <TextContainerRight>
-          <CardHightLightText>{formattedPrice(price)}</CardHightLightText>
+          <CardHightLightText>
+            {formattedPrice.format(price)}
+          </CardHightLightText>
         </TextContainerRight>
       </TextContainer>
     </CardContainer>
