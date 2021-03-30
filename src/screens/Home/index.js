@@ -24,7 +24,7 @@ export const HomeScreen = () => {
     const result = await getHousesCall();
     console.log('Home');
     console.log(result.properties);
-    console.tron.log(result.properties);
+    //console.tron.log(result.properties);
 
     setHousesListData(result.properties ? result.properties : []);
     setLoading(false);
