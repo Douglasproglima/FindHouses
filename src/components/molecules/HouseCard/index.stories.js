@@ -21,7 +21,7 @@ stories.addDecorator(getStory => <Wrapper>{getStory()}</Wrapper>);
 
 //#region Stories Buttons
 stories.add('Standard', () => {
-  const imageSource = text('ImageSource', { uri: IMAGE_URL });
+  const imgSource = text('ImageSource', { uri: IMAGE_URL });
   const title = text('Title', 'Barraco dos sonhos');
   const description = text(
     'Description',
@@ -32,7 +32,7 @@ stories.add('Standard', () => {
 
   return (
     <HouseCard
-      imageSource={imageSource}
+      imgSource={imgSource}
       title={title}
       description={description}
       price={price}

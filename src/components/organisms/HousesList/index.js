@@ -13,7 +13,7 @@ export const HousesList = ({ data, children }) => {
         <HouseCard
           title={item.address.line}
           description={`${item.address.neighborhood_name} - ${item.address.state}`}
-          imageSource={item.photos[0].href}
+          imgSource={item.photos[0].href}
           price={item.community.price_max}
         />
       )}
