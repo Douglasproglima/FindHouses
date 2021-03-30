@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components/native';
 
-//export const ScreenContainer = styled.SafeAreaView`
+export const ScreenScroll = styled.ScrollView``;
+
 export const ScreenContainer = styled.View`
   display: flex;
   flex-direction: column;
@@ -34,17 +35,13 @@ export const TitleContainer = styled.View`
 `;
 
 export const LoaderContainer = styled.View`
-  ${({ theme }) => css`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: ${theme.metrics.px(48)}px;
-  `}
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: ${({ theme }) => theme.metrics.px(48)}px;
 `;
 
 export const Loader = styled.ActivityIndicator`
-  ${({ theme }) => css`
-    margin-bottom: ${theme.metrics.px(12)}px;
-  `}
+  margin-bottom: ${({ theme }) => theme.metrics.px(12)}px;
 `;
