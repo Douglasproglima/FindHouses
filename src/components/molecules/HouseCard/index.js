@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import {
   CardContainer,
   CardImg,
@@ -9,7 +10,9 @@ import {
 import { CardTitle, CardDescription, CardHightLightText } from '../../atoms';
 import { formattedPrice } from '../../../utils/formattedPrice';
 
-export const HouseCard = ({ imgSource, title, description, price }) => {
+export const HouseCard = ({ imgSource, title, description, price, item }) => {
+  const navigation = useNavigation();
+
   const formattedPrice = value => {
     if (value != null) {
       const formatted =
@@ -21,8 +24,15 @@ export const HouseCard = ({ imgSource, title, description, price }) => {
     }
   };
 
+  const onClickItemContainer = () => {
+    navigation.navigate('Detail', { selectedHouse: item });
+  };
+
   return (
-    <CardContainer>
+    <CardContainer
+      onPress={() => {
+        onClickItemContainer();
+      }}>
       <CardImg source={{ uri: imgSource }} />
 
       <TextContainer>
