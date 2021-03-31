@@ -2,13 +2,14 @@ import React from 'react';
 import { HouseCard } from '../../molecules/HouseCard';
 import { HouseListContainer } from './styles';
 
-export const HousesList = ({ data, children }) => {
+export const HousesList = ({ data, children, loading }) => {
   console.log('HousesLists - Debug');
-  console.log(data);
+  console.log({ data });
 
   return (
     <HouseListContainer
       data={data}
+      refreshing={loading}
       renderItem={({ item }) => (
         <HouseCard
           title={item.address.line}

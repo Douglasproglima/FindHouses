@@ -22,7 +22,7 @@ export const HomeScreen = () => {
 
   const callGetHouses = async () => {
     const result = await getHousesCall();
-    console.log('Home');
+    console.log({ result });
     console.log(result.properties);
     //console.tron.log(result.properties);
 
@@ -50,7 +50,7 @@ export const HomeScreen = () => {
           {loading && (
             <LoaderContainer>
               <Loader size="large" color="white" />
-              <DetailText>Loading...</DetailText>
+              <DetailText>Carregando...</DetailText>
             </LoaderContainer>
           )}
         </ContentContainer>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { formattedPrice } from '../../../utils/formattedPrice';
-import { CardTitle, CardDescription, CardHightLightText } from '../../atoms';
 import {
   CardContainer,
   CardImg,
@@ -8,6 +6,8 @@ import {
   TextContainerLeft,
   TextContainerRight,
 } from './styles';
+import { CardTitle, CardDescription, CardHightLightText } from '../../atoms';
+import { formattedPrice } from '../../../utils/formattedPrice';
 
 export const HouseCard = ({ imgSource, title, description, price }) => {
   const formattedPrice = value => {

@@ -1,9 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { ThemeProvider } from 'styled-components';
-import { HomeScreen } from './screens';
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 import { theme } from './styles/theme';
 import { Navigator } from './routes';
 import StoryBook from '../storybook';

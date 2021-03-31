@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { SectionView, SectionImage } from './styles';
 import { StatusBar } from 'react-native';
+import { SectionView, SectionImage } from './styles';
 import Logo from '../../assets/img/Logo.png';
 import { useNavigation } from '@react-navigation/native';
 
