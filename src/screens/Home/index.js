@@ -4,14 +4,13 @@ import {
   TopContainer,
   TitleContainer,
   ContentContainer,
-  Loader,
-  LoaderContainer,
 } from './styles';
 import {
   Title,
   IconButton,
   Input,
   HousesList,
+  Loader,
   DetailText,
 } from '../../components';
 import { getHousesCall } from '../../services/calls';
@@ -47,12 +46,7 @@ export const HomeScreen = () => {
           </TopContainer>
 
           <Input label="Localização" placeholder="Digite o endereço" />
-          {loading && (
-            <LoaderContainer>
-              <Loader size="large" color="white" />
-              <DetailText>Carregando...</DetailText>
-            </LoaderContainer>
-          )}
+          {loading && <Loader />}
         </ContentContainer>
       </HousesList>
     </ScreenContainer>
