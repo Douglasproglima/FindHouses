@@ -1,11 +1,12 @@
 import React from 'react';
-import { IconButtonContainer } from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export const IconButton = ({ transparent, iconName }) => {
+import { IconButtonContainer } from './styles';
+
+export const IconButton = ({ transparent, iconName, onPress, fill }) => {
   return (
-    <IconButtonContainer transparent={transparent}>
-      <Icon name={iconName} color="white" size={20} />
+    <IconButtonContainer onPress={onPress} transparent={transparent}>
+      <Icon name={iconName} color={fill ? 'yellow' : 'white'} size={20} />
     </IconButtonContainer>
   );
 };
