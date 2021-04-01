@@ -2,11 +2,7 @@ import api from './api';
 
 export const getHousesCall = async () => {
   try {
-    const result = await api.get(
-      '/properties/v2/list-for-rent?city=Miami&state_code=FL&limit=15&offset=0&sort=relevance',
-    );
-
-    /*const result = await api.get('/properties/v2/list-for-rent', {
+    const result = await api.get('/properties/v2/list-for-rent', {
       params: {
         city: 'Miami',
         state_code: 'FL',
@@ -15,8 +11,6 @@ export const getHousesCall = async () => {
         sort: 'relevance',
       },
     });
-
-    return result.data;*/
 
     return result.data;
   } catch (error) {
