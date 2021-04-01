@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { useHousesStore } from '../../../services/stores';
 import {
   CardContainer,
   CardImg,
@@ -12,9 +13,11 @@ import { formattedPriceWithRegex } from '../../../utils/formattedPrice';
 
 export const HouseCard = ({ imgSource, title, description, price, item }) => {
   const navigation = useNavigation();
+  const { setSelectedHouse } = useHousesStore();
 
   const onClickItemContainer = () => {
-    navigation.navigate('Detail', { selectedHouse: item });
+    setSelectedHouse(item);
+    navigation.navigate('Detail');
   };
 
   return (

@@ -5,19 +5,14 @@ import {
   TitleContainer,
   ContentContainer,
 } from './styles';
-import {
-  Title,
-  IconButton,
-  Input,
-  HousesList,
-  Loader,
-  DetailText,
-} from '../../components';
+import { Title, IconButton, Input, HousesList, Loader } from '../../components';
 import { getHousesCall } from '../../services/calls';
+import { useHousesStore } from '../../services/stores';
 
 export const HomeScreen = () => {
+  const { housesList, setHousesList } = useHousesStore();
   const [loading, setLoading] = useState(true);
-  const [housesListData, setHousesListData] = useState([]);
+  //const [housesListData, setHousesListData] = useState([]);
 
   const callGetHouses = async () => {
     const result = await getHousesCall();
@@ -25,7 +20,7 @@ export const HomeScreen = () => {
     console.log(result.properties);
     //console.tron.log(result.properties);
 
-    setHousesListData(result.properties ? result.properties : []);
+    setHousesList(result.properties ? result.properties : []);
     setLoading(false);
   };
 
@@ -35,7 +30,7 @@ export const HomeScreen = () => {
 
   return (
     <ScreenContainer>
-      <HousesList data={housesListData}>
+      <HousesList data={housesList}>
         <ContentContainer>
           <TopContainer>
             <TitleContainer>

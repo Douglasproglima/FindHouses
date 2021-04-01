@@ -16,9 +16,10 @@ import {
   BottomScreenContainer,
   FeaturesContainer,
 } from './styles';
+import { useHousesStore } from '../../../services/stores';
 
 export const DetailScreen = ({ route, navigation }) => {
-  const { selectedHouse } = route.params;
+  const { selectedHouse } = useHousesStore();
   const [loading, setLoading] = useState(true);
   const [houseDetail, setHouseDetail] = useState(null);
 
