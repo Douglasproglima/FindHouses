@@ -1,8 +1,8 @@
 import React from 'react';
-import { DetailText } from '../../atoms';
-import { FeatureCardContainer } from './styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
+import { DetailText } from '../../atoms';
+import { FeatureCardContainer } from './styles';
 
 export const HouseFeatureCard = ({ iconName, featureText, iconLib }) => {
   return (

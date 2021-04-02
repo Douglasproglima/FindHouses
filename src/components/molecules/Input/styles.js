@@ -1,12 +1,16 @@
 import styled from 'styled-components/native';
 
 export const InputContainer = styled.View`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  position: relative;
-  width: 100%;
+  /* position: relative;
+  margin-top: ${({ theme, mt }) => theme.metrics.px(mt || 0)}px;
+  margin-bottom: ${({ theme, mb }) => theme.metrics.px(mb || 0)}px;
+  margin-left: ${({ theme, ml }) => theme.metrics.px(ml || 0)}px;
+  margin-right: ${({ theme, mr }) => theme.metrics.px(mr || 0)}px; */
 `;
 
 export const InputText = styled.TextInput`

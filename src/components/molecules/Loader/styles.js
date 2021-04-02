@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
 
 export const LoaderContainer = styled.View`
-  margin-top: ${({ theme }) => theme.metrics.px(48)}px;
   width: 100%;
+  margin-top: ${({ theme }) => theme.metrics.px(48)}px;
   display: flex;
   align-items: center;
   justify-content: center;
