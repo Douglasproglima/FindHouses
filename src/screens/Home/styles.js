@@ -3,13 +3,14 @@ import styled, { css } from 'styled-components/native';
 export const ScreenScroll = styled.ScrollView``;
 
 export const ScreenContainer = styled.View`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 100%;
-  height: 100%;
   background-color: ${({ theme }) => theme.colors.BackgroundDark};
+  padding-top: ${({ theme }) => theme.metrics.px(24)}px;
 `;
 
 export const ContentContainer = styled.View`
@@ -22,11 +23,11 @@ export const ContentContainer = styled.View`
 `;
 
 export const TopContainer = styled.View`
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: ${({ theme }) => theme.metrics.px(24)}px;
 `;
 
