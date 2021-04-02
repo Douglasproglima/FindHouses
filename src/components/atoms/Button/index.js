@@ -2,10 +2,10 @@ import React from 'react';
 import { ButtonContainer } from './styles';
 import { ButtonText } from '../Text/index';
 
-export const Button = ({ text }) => {
+export const Button = ({ children, ...props }) => {
   return (
-    <ButtonContainer>
-      <ButtonText>{text}</ButtonText>
+    <ButtonContainer {...props}>
+      <ButtonText>{children}</ButtonText>
     </ButtonContainer>
   );
 };

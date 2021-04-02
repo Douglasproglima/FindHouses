@@ -9,17 +9,24 @@ const BaseText = styled.Text`
 
 //#region Titles
 export const Title = styled(BaseText)`
-  font-size: ${({ theme }) => theme.metrics.px(26)}px;
+  font-size: ${({ theme }) => theme.metrics.px(28)}px;
   color: ${({ theme }) => theme.colors.White};
   font-family: 'Montserrat-Bold';
 `;
 //#endregion
 
 //#region Inputs Texts
-export const InputLabel = styled(BaseText)`
+export const InputSectionLabel = styled(BaseText)`
   font-size: ${({ theme }) => theme.metrics.px(16)}px;
+  color: white;
+  font-family: 'Montserrat-SemiBold';
+  /* font-family: 'Montserrat-Regular'; */
+`;
+
+export const InputLabel = styled(BaseText)`
+  font-size: ${({ theme }) => theme.metrics.px(14)}px;
   color: ${({ theme }) => theme.colors.White};
-  padding-left: ${({ theme }) => theme.metrics.px(2)}px;
+  /* padding-left: ${({ theme }) => theme.metrics.px(2)}px; */
   font-family: 'Montserrat-SemiBold';
 `;
 //#endregion
