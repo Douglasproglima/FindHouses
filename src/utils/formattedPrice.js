@@ -1,3 +1,6 @@
+import 'intl';
+import 'intl/locale-data/jsonp/en';
+
 export const formattedPrice = number =>
   new Intl.NumberFormat('en-US', {
     style: 'currency',
