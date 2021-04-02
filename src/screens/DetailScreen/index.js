@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import { getHouseDetail } from '../../services/calls';
+import { useHousesStore } from '../../services/stores';
 import formattedPriceWithRegex from '../../utils/formattedPrice';
 import {
   getIfHouseIsFavorite,
@@ -24,7 +25,8 @@ import {
 } from './styles';
 import { useHousesStore } from '../../../services/stores';
 
-export const DetailScreen = ({ route, navigation }) => {
+export const DetailScreen = ({ navigation }) => {
+  // const { selectedHouse } = route.params;
   const { selectedHouse } = useHousesStore();
   const [loading, setLoading] = useState(true);
   const [houseDetail, setHouseDetail] = useState(null);
@@ -63,14 +65,13 @@ export const DetailScreen = ({ route, navigation }) => {
 
   return (
     <ScreenContainer>
-      <ImageBackground source={{ uri: selectedHouse.photo[0].href }}>
+      <ImageBackground source={{ uri: selectedHouse.photos[0].href }}>
         <IconButton
-          onPress={onClickArrowBac}
+          onPress={onClickArrowBack}
           iconName="chevron-back"
           transparent
           onPress={onClickArrowBack}
         />
-        <IconButton iconName="star-outline" transparent />
 
         <IconButton
           onPress={saveFavoriteHouse}
@@ -89,7 +90,9 @@ export const DetailScreen = ({ route, navigation }) => {
           <DetailTitle>{houseDetail.address.line}</DetailTitle>
 
           <DetailSubTitle>
-            {formattedPriceWithRegex.format(houseDetail.community.price_max)}
+            {formattedPrice.format(
+              houseDetail.community?.price_max || houseDetail.price,
+            )}
           </DetailSubTitle>
 
           <DetailText>
@@ -99,6 +102,7 @@ export const DetailScreen = ({ route, navigation }) => {
           <DetailSectionTitle mt={24} mb={12}>
             Detalhes
           </DetailSectionTitle>
+
           <FeaturesContainer>
             <HouseFeatureCard
               iconName="arrow-expand-all"
@@ -122,9 +126,11 @@ export const DetailScreen = ({ route, navigation }) => {
           <DetailSectionTitle mt={24} mb={12}>
             Características do Imóvel
           </DetailSectionTitle>
-          {houseDetail.features[1].text.map(item => (
-            <DetailText mb={2} key={item}>
-              * {item}
+
+          {houseDetail.features[1]?.text.map(item => (
+            <DetailText key={item} mb={2}>
+              {' '}
+              - {item}
             </DetailText>
           ))}
         </BottomScreenContainer>
