@@ -1,20 +1,16 @@
 import React, { useEffect } from 'react';
 import { StatusBar } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { SectionView, SectionImage } from './styles';
 import Logo from '../../assets/img/Logo.png';
-import { useNavigation } from '@react-navigation/native';
 
 export const SplashScreen = () => {
   const navigator = useNavigation();
 
-  const goToHomeScreen = () => {
+  useEffect(() => {
     setTimeout(() => {
       navigator.navigate('Home');
-    }, 2000);
-  };
-
-  useEffect(() => {
-    goToHomeScreen();
+    }, 3000);
   }, []);
 
   return (
