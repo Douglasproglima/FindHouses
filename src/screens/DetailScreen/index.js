@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Alert } from 'react-native';
 import { getHouseDetail } from '../../services/calls';
 import formattedPriceWithRegex from '../../utils/formattedPrice';
+import {
+  getIfHouseIsFavorite,
+  saveHouseAsFavorite,
+  removeHouseAsFavorite,
+} from '../../services/db';
 import {
   IconButton,
   DetailSectionTitle,
@@ -22,6 +28,24 @@ export const DetailScreen = ({ route, navigation }) => {
   const { selectedHouse } = useHousesStore();
   const [loading, setLoading] = useState(true);
   const [houseDetail, setHouseDetail] = useState(null);
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const saveFavoriteHouse = async () => {
+    if (isFavorite) {
+      await removeHouseAsFavorite(selectedHouse.property_id);
+      Alert.alert('Imóvel removido dos favorito com sucesso!');
+      setIsFavorite(false);
+    } else {
+      await saveHouseAsFavorite(selectedHouse.property_id);
+      Alert.alert('Imóvel salvo nos favorito com sucesso!');
+      setIsFavorite(true);
+    }
+  };
+
+  const checkIfHouseIsFavorite = async () => {
+    const isFavorite = await getIfHouseIsFavorite(selectedHouse.property_id);
+    setIsFavorite(isFavorite);
+  };
 
   useEffect(() => {
     async function callGetHouseDetail() {
@@ -30,6 +54,7 @@ export const DetailScreen = ({ route, navigation }) => {
       setLoading(false);
     }
     callGetHouseDetail();
+    checkIfHouseIsFavorite();
   }, [selectedHouse]);
 
   const onClickArrowBack = () => {
@@ -43,8 +68,16 @@ export const DetailScreen = ({ route, navigation }) => {
           onPress={onClickArrowBac}
           iconName="chevron-back"
           transparent
+          onPress={onClickArrowBack}
         />
         <IconButton iconName="star-outline" transparent />
+
+        <IconButton
+          onPress={saveFavoriteHouse}
+          iconName={isFavorite ? 'star' : 'star-outline'}
+          transparent
+          fill={isFavorite}
+        />
       </ImageBackground>
 
       {loading ? (
