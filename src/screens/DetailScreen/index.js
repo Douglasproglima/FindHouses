@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import { getHouseDetail } from '../../services/calls';
 import { useHousesStore } from '../../services/stores';
-import formattedPriceWithRegex from '../../utils/formattedPrice';
+import formattedPrice from '../../utils/formattedPrice';
 import {
   getIfHouseIsFavorite,
   saveHouseAsFavorite,
@@ -23,7 +23,6 @@ import {
   BottomScreenContainer,
   FeaturesContainer,
 } from './styles';
-import { useHousesStore } from '../../../services/stores';
 
 export const DetailScreen = ({ navigation }) => {
   // const { selectedHouse } = route.params;
@@ -90,7 +89,7 @@ export const DetailScreen = ({ navigation }) => {
           <DetailTitle>{houseDetail.address.line}</DetailTitle>
 
           <DetailSubTitle>
-            {formattedPrice.format(
+            {formattedPrice(
               houseDetail.community?.price_max || houseDetail.price,
             )}
           </DetailSubTitle>

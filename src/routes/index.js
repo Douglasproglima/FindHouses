@@ -1,8 +1,15 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import { SplashScreen, HomeScreen, DetailScreen } from '../screens';
 
-export const Navigator = () => {
+const forFade = ({ current, closing }) => ({
+  cardStyle: {
+    opacity: current.progress,
+  },
+});
+
+export function Navigator() {
   const Stack = createStackNavigator();
   return (
     <Stack.Navigator headerMode="none">
@@ -11,13 +18,11 @@ export const Navigator = () => {
         component={SplashScreen}
         options={{ cardStyleInterpolator: forFade }}
       />
-
       <Stack.Screen
         name="Home"
         component={HomeScreen}
         options={{ cardStyleInterpolator: forFade }}
       />
-
       <Stack.Screen
         name="Detail"
         component={DetailScreen}
@@ -25,4 +30,4 @@ export const Navigator = () => {
       />
     </Stack.Navigator>
   );
-};
+}

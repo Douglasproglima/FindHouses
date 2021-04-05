@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Title, IconButton, Input, HousesList, Loader } from '../../components';
+import {
+  Title,
+  IconButton,
+  Input,
+  HousesList,
+  Loader,
+  FilterModal,
+} from '../../components';
 import {
   ScreenContainer,
   TopContainer,
@@ -53,7 +60,7 @@ export const HomeScreen = () => {
           </TopContainer>
 
           <Input label="Localização" placeholder="Digite o endereço" />
-          {loading && <Loader />}
+          {loadingHousesList && <Loader />}
         </ContentContainer>
       </HousesList>
 

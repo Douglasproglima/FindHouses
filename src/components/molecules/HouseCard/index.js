@@ -9,7 +9,7 @@ import {
   TextContainerRight,
 } from './styles';
 import { CardTitle, CardDescription, CardHightLightText } from '../../atoms';
-import { formattedPriceWithRegex } from '../../../utils/formattedPrice';
+import { formattedPrice } from '../../../utils/formattedPrice';
 
 export const HouseCard = ({ imgSource, title, description, price, item }) => {
   const navigation = useNavigation();
@@ -34,9 +34,7 @@ export const HouseCard = ({ imgSource, title, description, price, item }) => {
         </TextContainerLeft>
 
         <TextContainerRight>
-          <CardHightLightText>
-            {formattedPriceWithRegex.format(price)}
-          </CardHightLightText>
+          <CardHightLightText>{formattedPrice(price)}</CardHightLightText>
         </TextContainerRight>
       </TextContainer>
     </CardContainer>
