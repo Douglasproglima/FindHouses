@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import { getHouseDetail } from '../../services/calls';
 import { useHousesStore } from '../../services/stores';
-import formattedPrice from '../../utils/formattedPrice';
+import {
+  formatCurrencyUSD,
+  formatCurrencyBRL,
+} from '../../utils/formattedPrice';
 import {
   getIfHouseIsFavorite,
   saveHouseAsFavorite,
   removeHouseAsFavorite,
 } from '../../services/db';
 import {
+  Line,
   IconButton,
   DetailSectionTitle,
   DetailSubTitle,
@@ -48,13 +52,14 @@ export const DetailScreen = ({ navigation }) => {
     setIsFavorite(isFavorite);
   };
 
+  const getDetail = async () => {
+    const result = await getHouseDetail(selectedHouse.property_id);
+    setHouseDetail(result.properties[0] ? result.properties[0] : null);
+    setLoading(false);
+  };
+
   useEffect(() => {
-    async function callGetHouseDetail() {
-      const result = await getHouseDetail(selectedHouse.property_id);
-      setHouseDetail(result.properties[0] ? result.properties[0] : null);
-      setLoading(false);
-    }
-    callGetHouseDetail();
+    getDetail();
     checkIfHouseIsFavorite();
   }, [selectedHouse]);
 
@@ -86,10 +91,14 @@ export const DetailScreen = ({ navigation }) => {
         </BottomScreenContainer>
       ) : (
         <BottomScreenContainer>
-          <DetailTitle>{houseDetail.address.line}</DetailTitle>
+          <DetailTitle mb={6}>
+            {houseDetail.address.line}
+          </DetailTitle>
+
+          <Line />
 
           <DetailSubTitle>
-            {formattedPrice(
+            {formatCurrencyBRL(
               houseDetail.community?.price_max || houseDetail.price,
             )}
           </DetailSubTitle>
@@ -101,6 +110,8 @@ export const DetailScreen = ({ navigation }) => {
           <DetailSectionTitle mt={24} mb={12}>
             Detalhes
           </DetailSectionTitle>
+
+          <Line />
 
           <FeaturesContainer>
             <HouseFeatureCard
@@ -125,6 +136,8 @@ export const DetailScreen = ({ navigation }) => {
           <DetailSectionTitle mt={24} mb={12}>
             Características do Imóvel
           </DetailSectionTitle>
+
+          <Line />
 
           {houseDetail.features[1]?.text.map(item => (
             <DetailText key={item} mb={2}>

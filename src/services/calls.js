@@ -55,6 +55,8 @@ export const getHouseDetail = async property_id => {
       },
     });
 
+    //console.log('getHouseDetail() -> ' + result.data[0].price);
+
     return result.data;
   } catch (error) {
     console.log(error);

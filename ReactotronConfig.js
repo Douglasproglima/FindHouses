@@ -2,8 +2,8 @@
 
 //console.log(__DEV__);
 //if (__DEV__) {
-  /*const tron = Reactotron.configure({ host: '127.0.0.1' })*/
-  /*const tron = Reactotron.configure() //{ host: '127.0.0.1' })
+/*const tron = Reactotron.configure({ host: '127.0.0.1' })*/
+/*const tron = Reactotron.configure() //{ host: '127.0.0.1' })
     .useReactNative()
     .connect();
 

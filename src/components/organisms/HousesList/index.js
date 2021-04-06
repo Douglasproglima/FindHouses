@@ -3,8 +3,8 @@ import { HouseCard } from '../../molecules/HouseCard';
 import { HouseListContainer } from './styles';
 
 export const HousesList = ({ data, children, loading, onEndReached }) => {
-  console.log('HousesLists - Debug');
-  console.log({ data });
+  //console.log('HousesLists - Debug');
+  //console.log(data);
 
   return (
     <HouseListContainer

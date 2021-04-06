@@ -9,9 +9,18 @@ const BaseText = styled.Text`
 
 //#region Titles
 export const Title = styled(BaseText)`
-  font-size: ${({ theme }) => theme.metrics.px(28)}px;
+  font-size: ${({ theme }) => theme.metrics.px(26)}px;
   color: ${({ theme }) => theme.colors.White};
   font-family: 'Montserrat-Bold';
+`;
+
+export const Line = styled.Text`
+  width: 98%;
+  height: ${({ theme }) => theme.metrics.hp(0.3)}px;
+  margin-top: ${({ theme, mt }) => theme.metrics.px(0.5)}px;
+  margin-bottom: ${({ theme, mb }) => theme.metrics.px(10)}px;
+  border: 2px;
+  border-color: '#2c247e;';
 `;
 //#endregion
 

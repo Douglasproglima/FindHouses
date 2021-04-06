@@ -9,7 +9,7 @@ import {
   TextContainerRight,
 } from './styles';
 import { CardTitle, CardDescription, CardHightLightText } from '../../atoms';
-import { formattedPrice } from '../../../utils/formattedPrice';
+import { formatCurrencyUSD } from '../../../utils/formattedPrice';
 
 export const HouseCard = ({ imgSource, title, description, price, item }) => {
   const navigation = useNavigation();
@@ -34,7 +34,7 @@ export const HouseCard = ({ imgSource, title, description, price, item }) => {
         </TextContainerLeft>
 
         <TextContainerRight>
-          <CardHightLightText>{formattedPrice(price)}</CardHightLightText>
+          <CardHightLightText>{formatCurrencyUSD(price)}</CardHightLightText>
         </TextContainerRight>
       </TextContainer>
     </CardContainer>

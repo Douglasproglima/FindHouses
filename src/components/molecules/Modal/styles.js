@@ -37,7 +37,6 @@ export const BottomScreenContainer = styled.ScrollView.attrs({
   border-top-right-radius: ${({ theme }) => theme.metrics.px(24)}px;
   border-top-left-radius: ${({ theme }) => theme.metrics.px(24)}px;
   position: absolute;
-  position: absolute;
   bottom: 0;
 `;
 
