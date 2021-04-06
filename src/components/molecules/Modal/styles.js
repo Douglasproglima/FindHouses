@@ -18,7 +18,7 @@ export const ModalBackground = styled.View`
   justify-content: flex-end;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.darkTransparent};
+  background-color: ${({ theme }) => theme.colors.DarkTransparent};
 `;
 
 export const BottomScreenContainer = styled.ScrollView.attrs({
@@ -33,7 +33,7 @@ export const BottomScreenContainer = styled.ScrollView.attrs({
   padding: ${({ theme }) => theme.metrics.px(24)}px;
   width: 100%;
   height: ${({ theme }) => theme.metrics.hp(86)}px;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.BackgroundDark};
   border-top-right-radius: ${({ theme }) => theme.metrics.px(24)}px;
   border-top-left-radius: ${({ theme }) => theme.metrics.px(24)}px;
   position: absolute;

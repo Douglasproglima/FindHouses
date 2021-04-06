@@ -11,7 +11,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <ThemeProvider theme={theme}>
-        <StatusBar translucent backgroundColor={theme.colors.backgroundDark} />
+        <StatusBar translucent backgroundColor={theme.colors.BackgroundDark} />
         <Navigator />
       </ThemeProvider>
     </NavigationContainer>

@@ -6,7 +6,7 @@ export const ScreenContainer = styled.View`
   flex: 1;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.BackgroundDark};
 `;
 
 export const ImageBackground = styled.ImageBackground`
@@ -32,7 +32,7 @@ export const BottomScreenContainer = styled.ScrollView.attrs({
   display: flex;
   flex-direction: column;
   padding: ${({ theme }) => theme.metrics.px(24)}px;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.BackgroundDark};
   border-top-right-radius: ${({ theme }) => theme.metrics.px(24)}px;
   border-top-left-radius: ${({ theme }) => theme.metrics.px(24)}px;
   position: absolute;
