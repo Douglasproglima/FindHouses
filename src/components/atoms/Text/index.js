@@ -15,12 +15,12 @@ export const Title = styled(BaseText)`
 `;
 
 export const Line = styled.Text`
-  width: 98%;
+  width: 100%;
   height: ${({ theme }) => theme.metrics.hp(0.3)}px;
   margin-top: ${({ theme, mt }) => theme.metrics.px(0.5)}px;
   margin-bottom: ${({ theme, mb }) => theme.metrics.px(10)}px;
   border: 2px;
-  border-color: '#2c247e;';
+  border-color: 'rgba(82, 75, 156, 0.5)';
 `;
 //#endregion
 
